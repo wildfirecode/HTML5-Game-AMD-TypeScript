@@ -1,7 +1,7 @@
 # 在基于TypeScript的LayaAir HTML5游戏开发中使用AMD
 
 ## AMD
-AMD是"Asynchronous Module Definition"的缩写，意思就是"异步模块定义"。这是目前最流行的JavaScript/TypeScript代码的管理方式。本文介绍了如何在基于TypeScript的LayaAir HTML5游戏开发中使用AMD来组织代码。本文参考资料列表中包含了更多关于AMD的信息。
+AMD是"Asynchronous Module Definition"的缩写，意思就是"异步模块定义"。这是目前最流行的JavaScript/TypeScript代码的管理方式。本文介绍了如何在基于TypeScript的LayaAir HTML5游戏开发中使用AMD来组织代码。本文末尾的参考资料列表中包含了更多关于AMD的信息。
 
 ## 示例项目
 示例项目源码从这里下载[https://github.com/wildfirecode/HTML5-Game-AMD-TypeScript][demo].
@@ -10,13 +10,13 @@ AMD是"Asynchronous Module Definition"的缩写，意思就是"异步模块定�
 依然使用LayaIDE来创建项目，因为要使用LayaAir引擎的库文件。
 
 ## 使用Visual Studio Code作为编码调试环境
-为了能够对index.html有绝对的控制权，我们不能再使用LayaIDE，为了能够编译和调试项目，我们需要添加一些额外的配置。
+为了能够对index.html有绝对的控制权，我们不能再使用LayaIDE来编译项目。另外，为了在VSCode中能够编译和调试项目，我们需要添加一些额外的配置。
 - 复制示例项目中的`.vscode`文件夹到自己项目的根目录。
-- 在index.html文件中引入所有的游戏代码编译文件
+- 在index.html文件中引入所有游戏代码的编译文件
     ```html
     <script src="./js/game.js"></script>
     ```
-- 在index.html文件中启动游戏。
+- 在index.html文件中实例化游戏入口类。
     ```html
     <script>
         require(['GameMain'], function (GameMain) {
@@ -28,7 +28,6 @@ AMD是"Asynchronous Module Definition"的缩写，意思就是"异步模块定�
     ```ts
     export const EventDispatcher = Laya.EventDispatcher;
     ```
-
 - 使用示例项目中的`tsconfig.json`覆盖原来的`tsconfig.json`文件。
 
 ## 编译和调试
