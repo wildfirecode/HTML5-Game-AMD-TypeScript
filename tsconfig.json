@@ -5,7 +5,7 @@
         "module": "amd",
         "skipLibCheck": true,
         "outDir": "./bin",
-        "outFile": "./bin/js/all.js"
+        "outFile": "./bin/js/game.js"
     },
     "experimentalDecorators": true,
     "exclude": [

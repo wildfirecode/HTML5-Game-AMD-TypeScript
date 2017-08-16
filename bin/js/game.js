@@ -1,4 +1,4 @@
-define("laya", ["require", "exports"], function (require, exports) {
+define("adapter", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.EventDispatcher = Laya.EventDispatcher;
@@ -6,7 +6,7 @@ define("laya", ["require", "exports"], function (require, exports) {
     exports.Animation = Laya.Animation;
     exports.Text = Laya.Text;
 });
-define("Foo", ["require", "exports", "laya"], function (require, exports, laya_1) {
+define("Foo", ["require", "exports", "./laya"], function (require, exports, laya_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Foo = (function () {
