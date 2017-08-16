@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "sourceMap": false,
+        "module": "amd",
+        "skipLibCheck": true,
+        "outDir": "./bin",
+        "outFile": "./bin/js/all.js"
+    },
+    "experimentalDecorators": true,
+    "exclude": [
+        "node_modules"
+    ]
+}

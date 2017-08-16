@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "file": "${workspaceRoot}/bin/index.html",
+            "webRoot": "${workspaceRoot}",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                "--allow-file-access-frome-files",
+                " --disable-web-security"
+            ]
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}
