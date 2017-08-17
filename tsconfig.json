@@ -4,8 +4,7 @@
         "sourceMap": false,
         "module": "amd",
         "skipLibCheck": true,
-        "outDir": "./bin",
-        "outFile": "./bin/js/game.js"
+        "outDir": "./bin/js"
     },
     "experimentalDecorators": true,
     "exclude": [
