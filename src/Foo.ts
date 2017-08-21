@@ -1,4 +1,4 @@
-import { Text } from './adapter';
+import { Text } from './Laya';
 export class Foo {
     constructor() {
         const hello = new Text();

@@ -5,8 +5,8 @@
         "module": "amd",
         "skipLibCheck": true,
         "outDir": "./bin/js",
-        "outFile": "./bin/js/GameMain.js",
-        "watch": true
+        "outFile": "./bin/js/GameMain.js"//,
+        // "watch": true
     },
     "experimentalDecorators": true,
     "exclude": [

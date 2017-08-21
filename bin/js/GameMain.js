@@ -1,14 +1,9 @@
-define("adapter", ["require", "exports"], function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.Text = Laya.Text;
-});
-define("Foo", ["require", "exports", "adapter"], function (require, exports, adapter_1) {
+define("Foo", ["require", "exports", "./Laya"], function (require, exports, Laya_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Foo = (function () {
         function Foo() {
-            var hello = new adapter_1.Text();
+            var hello = new Laya_1.Text();
             hello.text = 'Hello LayaAir';
             hello.fontSize = 20;
             hello.color = '#ffffff';
