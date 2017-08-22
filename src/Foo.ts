@@ -1,4 +1,4 @@
-import { Text } from './Laya';
+import { Text } from 'LayaAdapter';
 export class Foo {
     constructor() {
         const hello = new Text();
