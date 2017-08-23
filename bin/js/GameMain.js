@@ -4,10 +4,13 @@ define(["require", "exports", "./Greeting"], function (require, exports, Greetin
     // 程序入口
     var GameMain = (function () {
         function GameMain() {
+            console.log('GameMain instantiation.')
             Laya.init(600, 400);
             new Greeting_1.Greeting();
         }
         return GameMain;
     }());
     new GameMain();
+    console.log('GameMain module executed.')
 });
+console.log('GameMain loaded.')

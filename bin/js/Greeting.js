@@ -3,6 +3,7 @@ define(["require", "exports", "./getColor", "LayaAdapter"], function (require, e
     Object.defineProperty(exports, "__esModule", { value: true });
     var Greeting = (function () {
         function Greeting() {
+            console.log('Greeting instantiation.')
             var hello = new LayaAdapter_1.Text();
             hello.text = 'Hello LayaAir';
             hello.fontSize = 20;
@@ -12,4 +13,7 @@ define(["require", "exports", "./getColor", "LayaAdapter"], function (require, e
         return Greeting;
     }());
     exports.Greeting = Greeting;
+    console.log('Greeting module executed.')
 });
+
+console.log('Greeting loaded.')
