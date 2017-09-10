@@ -1,5 +1,5 @@
 import { getColor } from './getColor';
-import { Text } from 'LayaAdapter';
+import { Text } from 'Laya';
 export class Greeting {
     constructor() {
         const hello = new Text();

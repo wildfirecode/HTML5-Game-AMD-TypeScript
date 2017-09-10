@@ -1,10 +1,9 @@
-define(["require", "exports", "./getColor", "LayaAdapter"], function (require, exports, getColor_1, LayaAdapter_1) {
+define(["require", "exports", "./getColor", "Laya"], function (require, exports, getColor_1, Laya_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Greeting = (function () {
         function Greeting() {
-            console.log('Greeting instantiation.')
-            var hello = new LayaAdapter_1.Text();
+            var hello = new Laya_1.Text();
             hello.text = 'Hello LayaAir';
             hello.fontSize = 20;
             hello.color = getColor_1.getColor();
@@ -13,7 +12,4 @@ define(["require", "exports", "./getColor", "LayaAdapter"], function (require, e
         return Greeting;
     }());
     exports.Greeting = Greeting;
-    console.log('Greeting module executed.')
 });
-
-console.log('Greeting loaded.')
